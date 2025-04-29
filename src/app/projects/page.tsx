@@ -27,7 +27,7 @@ const projects: Project[] = [
       'i18n',
       'Prisma',
     ],
-    repoUrl: 'https://github.com/usuario/proyecto',
+    repoUrl: 'https://github.com/TomyRioss/portfolio1.0',
     liveUrl: 'https://proyecto.vercel.app',
   },
   {
