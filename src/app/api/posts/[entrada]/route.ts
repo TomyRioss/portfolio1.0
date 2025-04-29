@@ -3,9 +3,8 @@ import prisma from '@/lib/prisma';
 
 export async function GET(
   request: NextRequest,
-  context: { params: { entrada: string } },
+  { params }: { params: { entrada: string } },
 ) {
-  const { params } = context;
   try {
     const entrada = await prisma.entry.findUnique({
       where: {
@@ -21,6 +20,7 @@ export async function GET(
         image: true,
       },
     });
+
     return NextResponse.json(entrada);
   } catch (error) {
     console.error('Error crítico:', error);
