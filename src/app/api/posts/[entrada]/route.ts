@@ -3,12 +3,6 @@ import prisma from '@/lib/prisma';
 
 export const dynamic = 'force-dynamic';
 
-interface RouteParams {
-  params: {
-    entrada: string;
-  };
-}
-
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ entrada: string }> },
