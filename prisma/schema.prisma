@@ -1,0 +1,18 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Entry {
+  id          Int      @id @default(autoincrement())  // ID único para cada entrada
+  title       String   // Título de la entrada
+  excerpt     String   // Descripción breve (resumen) que aparece en el listado
+  content     String   // Contenido completo del artículo
+  image       String?  // URL de la imagen
+  entrada        String   @unique  // URL amigable (puedes usar el título para generar esto)
+  createdAt   DateTime @default(now())  // Fecha de creación
+}
