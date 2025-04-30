@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import { FC } from 'react';
+import ManagingProjects from './ManagingProjects';
+import { Separator } from '@/components/ui/separator';
 
 interface Project {
   name: string;
@@ -162,6 +164,8 @@ const page: FC = () => {
           <ProjectCard key={project.name} project={project} />
         ))}
       </div>
+      <Separator className="mt-20" />
+      <ManagingProjects />
     </main>
   );
 };
