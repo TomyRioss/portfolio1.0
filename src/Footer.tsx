@@ -21,7 +21,7 @@ const socials = [
   },
   {
     name: 'Descargar CV',
-    link: '/cv.pdf',
+    link: '/CV.pdf',
     icon: <FaFilePdf />,
   },
   {
@@ -37,19 +37,24 @@ function Footer() {
   return (
     <footer className="w-full bg-black text-white py-10 flex flex-col items-center justify-center">
       <ul className="flex gap-8 mb-6">
-        {socials.map(social => (
-          <li key={social.name}>
-            <a
-              href={social.link}
-              target="_blank"
-              rel="noreferrer"
-              className="text-2xl hover:text-blue-400 transition"
-              title={social.name}
-            >
-              {social.icon}
-            </a>
-          </li>
-        ))}
+        {socials.map(social => {
+          const isDownload = social.name.toLowerCase().includes('cv');
+
+          return (
+            <li key={social.name}>
+              <a
+                href={social.link}
+                target={isDownload ? '_self' : '_blank'}
+                rel="noreferrer"
+                className="text-2xl hover:text-blue-400 transition"
+                title={social.name}
+                {...(isDownload && { download: true })}
+              >
+                {social.icon}
+              </a>
+            </li>
+          );
+        })}
       </ul>
       <p className="text-sm text-gray-400">
         © {currentYear} Tomás Ríos. All rights reserved.

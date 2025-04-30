@@ -18,13 +18,15 @@ const socials = [
   },
   {
     name: 'Descargar CV',
-    link: '/cv.pdf',
+    link: '/CV.pdf',
     icon: 'file-pdf',
+    download: true, // <- Agregamos esta propiedad
   },
   {
     name: 'Download CV (EN)',
     link: '/cv-en.pdf',
     icon: 'file-pdf',
+    download: true, // <- También
   },
 ];
 
@@ -34,7 +36,12 @@ function Socials() {
       <ul className="flex gap-5 mt-5">
         {socials.map(social => (
           <li key={social.name}>
-            <a href={social.link} target="_blank" rel="noreferrer">
+            <a
+              href={social.link}
+              target="_blank"
+              rel="noreferrer"
+              {...(social.download ? { download: '' } : {})} // <- Agrega "download" si corresponde
+            >
               <i className={`fa fa-${social.icon}`}>{social.name}</i>
             </a>
           </li>
