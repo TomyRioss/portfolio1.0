@@ -5,11 +5,11 @@ import 'keen-slider/keen-slider.min.css';
 import Link from 'next/link';
 
 const projects = [
-  { title: 'Proyecto 1', image: '/proyecto1.png' },
-  { title: 'Proyecto 2', image: '/proyecto2.png' },
-  { title: 'Proyecto 3', image: '/proyecto3.png' },
-  { title: 'Proyecto 4', image: '/proyecto4.png' },
-  { title: 'Proyecto 5', image: '/proyecto5.png' },
+  { title: 'Backendito Website', image: '/backendito.webp' },
+  { title: 'Ex-Portfolio', image: '/ex_portfolio.webp' },
+  { title: 'Krayson Website', image: '/krayson.webp' },
+  { title: 'Messageboard', image: '/messageboard.webp' },
+  { title: 'Sleekstyles E-Commerce', image: '/sleekstyles.webp' },
 ];
 
 function ProjectsSlider() {
@@ -44,8 +44,7 @@ function ProjectsSlider() {
   });
 
   return (
-    <section className="flex flex-col items-center justify-center w-full py-20 mt-20">
-      {/* Slider 1 */}
+    <section className="flex flex-col items-center justify-center w-full py-20  dark:bg-gradient-to-b dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 transition-colors duration-500">
       <div ref={slider1Ref} className="keen-slider w-full max-w-7xl">
         {projects.map((project, idx) => (
           <div

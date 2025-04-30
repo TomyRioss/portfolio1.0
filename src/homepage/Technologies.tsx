@@ -177,7 +177,7 @@ const aprendiento = [
 function Technologies() {
   return (
     <>
-      <section className="w-screen h-screen flex items-center justify-center bg-white p-10">
+      <section className="w-screen h-screen flex items-center justify-center p-10">
         <div className="grid grid-cols-2 grid-rows-2 gap-10 max-w-7xl w-full">
           {/* FRONTEND */}
           <div className="w-full text-center border-2 border-black p-10 rounded-xl shadow-lg">

@@ -20,7 +20,7 @@ function AboutMe() {
     <section className="flex  w-full h-full mt-20 justify-around">
       <div className="max-w-5xl">
         <h1 className="text-5xl font-sans text-left mb-5">Sobre mí</h1>
-        <p className="text-left text-gray-600 text-xl max-w-5xl">
+        <p className="text-left text-gray-600 dark:text-gray-300 text-xl max-w-5xl">
           Soy un desarrollador fullstack con experiencia en desarrollo web,
           desde hace 3 años que desarrollé aplicaciones web con Javascript,
           HTML/CSS, NodeJS y PostgreSQL. Desde entonces, mi ansias de
@@ -32,14 +32,18 @@ function AboutMe() {
           <ul className="flex gap-5 justify-center">
             {career.map(career => (
               <li key={career.name} className="text-left">
-                <p className="text-gray-600 text-xl">{career.name}</p>
-                <p className="text-gray-800 text-sm">{career.description}</p>
+                <p className="text-gray-600 dark:text-gray-300 text-xl">
+                  {career.name}
+                </p>
+                <p className="text-gray-800 dark:text-gray-400 text-sm">
+                  {career.description}
+                </p>
               </li>
             ))}
           </ul>
         </aside>
-        <h2 className="mt-10 border-2 border-black max-w-28 text-center rounded-lg p-2">
-          <a href="https://www.linkedin.com/in/tomy-rios/">Backendito</a>
+        <h2 className="mt-10 border-2 border-black dark:border-gray-600 max-w-28 text-center rounded-lg p-2">
+          <a href="https://backendito.com/">Backendito</a>
         </h2>
       </div>
       <div className="grid grid-cols-2 mt-10 items-center justify-center">

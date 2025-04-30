@@ -9,32 +9,28 @@ import Image from 'next/image';
 
 const testimonials = [
   {
-    company: 'REDTIC',
-    type: 'Company',
+    company: 'Minecomunidad',
     rating: 5,
-    text: 'Working with Tomas Rios has been an invaluable experience. His focus on quality and quick solutions are unmatched.',
-    logo: '/empresa1.png',
+    text: '"Perfecto, me alegra mucho tu compromiso, espero tu proyecto crezca, es por eso también que quiero hacer esta otra comisión contigo."',
+    logo: '/minecraftlogo.webp',
   },
   {
-    company: 'Seisk',
-    type: 'Advertising Agency',
+    company: 'Emerson Vigoreux',
     rating: 5,
-    text: 'At Seisk, his management of databases and processes was key to our success. Highly recommend him.',
-    logo: '/empresa2.png',
+    text: '"Encantado de trabajar con vosotros porque al final me vale la pena tener expertos acompañándome, porque ahorro tiempo y al mismo tiempo aprendo."',
+    logo: '/emanuel.webp',
   },
   {
-    company: 'Backendito Corp.',
-    type: 'Corporation of Development',
+    company: 'Radio Ibiza',
     rating: 5,
-    text: 'Excellent attitude, clear communication, and top-quality work. Tomas consistently delivers outstanding results.',
-    logo: '/empresa3.png',
+    text: 'Todavía trabajo parcialmente en este proyecto, es una gran experiencia! - Tomas Rios',
+    logo: '/radioibiza.webp',
   },
   {
-    company: 'Otro Cliente',
-    type: 'Tech Partner',
+    company: 'Bloxyfruits',
     rating: 5,
-    text: 'Tomas is an exceptional professional, dedicated and innovative in every project we worked together.',
-    logo: '/empresa4.png',
+    text: '"Todo perfecto."',
+    logo: '/bloxyfruits.webp',
   },
 ];
 
@@ -50,7 +46,7 @@ function Testimonials() {
       />
 
       {/* Overlay oscuro suave */}
-      <div className="absolute inset-0 bg-black bg-opacity-40 z-10" />
+      <div className="absolute inset-0 bg-gray-900 bg-opacity-40 z-10" />
 
       {/* Fades laterales */}
       <div className="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-black z-20 pointer-events-none" />
@@ -88,7 +84,7 @@ function Testimonials() {
             ) => (
               <SwiperSlide key={index}>
                 <div className="bg-white bg-opacity-20 backdrop-blur-md p-8 rounded-xl shadow-lg text-left min-h-[220px] flex flex-col justify-between">
-                  <div className="flex items-center gap-4 mb-6">
+                  <div className="flex items-center gap-4 mb-6 text-gray-600">
                     <div className="w-16 h-16 relative">
                       <Image
                         src={testimonial.logo}
@@ -97,11 +93,10 @@ function Testimonials() {
                         className="object-contain rounded-full"
                       />
                     </div>
-                    <div className="flex flex-col">
-                      <h3 className="text-xl font-bold">
+                    <div className="flex flex-col ">
+                      <h3 className="text-xl font-bold ">
                         {testimonial.company}
                       </h3>
-                      <p className="text-gray-300">{testimonial.type}</p>
                     </div>
                     <div className="flex items-center ml-auto">
                       {[...Array(testimonial.rating)].map((_, i) => (
@@ -112,7 +107,7 @@ function Testimonials() {
                       </span>
                     </div>
                   </div>
-                  <p className="text-gray-200">{testimonial.text}</p>
+                  <p className="text-gray-700">{testimonial.text}</p>
                 </div>
               </SwiperSlide>
             ),

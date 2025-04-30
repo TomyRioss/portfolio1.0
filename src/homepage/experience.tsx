@@ -19,8 +19,12 @@ function experience() {
       <ul className="flex gap-5 mt-5 justify-center">
         {xp.map(xp => (
           <li key={xp.time} className="text-left">
-            <p className="text-gray-600 text-xl">{xp.time}</p>
-            <p className="text-gray-800 text-sm">{xp.description}</p>
+            <p className="text-gray-600 text-xl dark:text-gray-300">
+              {xp.time}
+            </p>
+            <p className="text-gray-800 text-sm dark:text-gray-400">
+              {xp.description}
+            </p>
           </li>
         ))}
       </ul>

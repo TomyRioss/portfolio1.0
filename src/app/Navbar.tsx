@@ -40,7 +40,6 @@ function Navbar() {
     { href: '/', label: 'Inicio' },
     { href: '/projects', label: 'Proyectos' },
     { href: '/blog', label: 'Blog' },
-    { href: '/contact', label: 'Contacto' },
   ];
 
   return (

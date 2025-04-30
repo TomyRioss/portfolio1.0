@@ -19,8 +19,10 @@ function Header() {
         </div>
 
         <div className=" flex text-right flex-col max-w-5xl ">
-          <h1 className="text-9xl font-extrabold text-black">Tomas Rios</h1>
-          <h2 className="text-5xl font-semibold text-gray-600 mt-6">
+          <h1 className="text-9xl font-extrabold text-black dark:text-gray-300">
+            Tomas Rios
+          </h1>
+          <h2 className="text-5xl font-semibold text-gray-600 dark:text-gray-400 mt-6">
             Fullstack Developer
           </h2>
           <div className="flex">

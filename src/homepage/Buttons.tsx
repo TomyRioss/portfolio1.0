@@ -3,18 +3,14 @@ import React from 'react';
 const buttons = [
   {
     name: 'Certficados',
-    link: 'https://www.certficados.com/certificado/77d5c3c7-b7d2-4d3f-a3a7-d0b2a2d4a1f6',
+    link: 'https://drive.google.com/drive/folders/17WX0TMuy4EEEixqt7oEt9f4R0f3dtkOy?usp=sharing',
     icon: 'certificate',
   },
-  { name: 'Blog', link: 'https://blog.tomas-rios.com', icon: 'blog' },
-  {
-    name: 'Youtube',
-    link: 'https://www.youtube.com/channel/UC1u-o3k8u5i-5x8h-6-1-4a',
-    icon: 'youtube',
-  },
+  { name: 'Blog', link: 'https://tomasrioss.vercel.app/blog', icon: 'blog' },
+
   {
     name: 'Proyectos',
-    link: 'https://github.com/tomas-rios',
+    link: 'https://tomasrioss.vercel.app/projects',
     icon: 'github',
   },
 ];
