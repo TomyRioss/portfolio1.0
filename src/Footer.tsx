@@ -6,12 +6,12 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from 'react-icons/fa';
 const socials = [
   {
     name: 'Github',
-    link: 'https://github.com/tomas-rios',
+    link: 'https://github.com/tomyrioss',
     icon: <FaGithub />,
   },
   {
     name: 'Linkedin',
-    link: 'https://www.linkedin.com/in/tomas-rios-dev/',
+    link: 'https://www.linkedin.com/in/tomy-rios/',
     icon: <FaLinkedin />,
   },
   {
@@ -22,11 +22,6 @@ const socials = [
   {
     name: 'Descargar CV',
     link: '/CV.pdf',
-    icon: <FaFilePdf />,
-  },
-  {
-    name: 'Download CV (EN)',
-    link: '/cv-en.pdf',
     icon: <FaFilePdf />,
   },
 ];

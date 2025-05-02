@@ -30,7 +30,7 @@ const projects: Project[] = [
       'Prisma',
     ],
     repoUrl: 'https://github.com/TomyRioss/portfolio1.0',
-    liveUrl: 'https://proyecto.vercel.app',
+    liveUrl: 'https://tomasrioss.vercel.app',
   },
   {
     name: 'Ex-Portfolio',
@@ -38,8 +38,8 @@ const projects: Project[] = [
       'Portfolio personal obsoleto debido a las tecnologías utilizadas, falta de actualizaciones en mi stack y diseño optimizable.',
     image: '/ex_portfolio.webp',
     tags: ['React', 'Vite.js', 'TailwindCSS', 'Javascript'],
-    repoUrl: 'https://github.com/usuario/proyecto',
-    liveUrl: 'https://proyecto.vercel.app',
+    repoUrl: 'https://github.com/TomyRioss/portfolio.2',
+    liveUrl: 'https://tomasrios.vercel.app',
   },
   {
     name: 'Backendito Website',
@@ -55,8 +55,8 @@ const projects: Project[] = [
       'Cloudflare',
       'Vercel',
     ],
-    repoUrl: 'https://github.com/usuario/proyecto',
-    liveUrl: 'https://proyecto.vercel.app',
+    repoUrl: 'https://github.com/TomyRioss/backendito',
+    liveUrl: 'https://backendito.com',
   },
   {
     name: 'Krayson Website',
@@ -64,8 +64,8 @@ const projects: Project[] = [
       'Página web para vender los servicios de la agencia de Marketing "Krayson Studios", utilizando pasarelas de pago y APIs externas, además de un diseño excelente.',
     image: '/krayson.webp',
     tags: ['React', 'Vite.js', 'TailwindCSS', 'Javascript', 'Paypal API'],
-    repoUrl: 'https://github.com/usuario/proyecto',
-    liveUrl: 'https://proyecto.vercel.app',
+    repoUrl: 'https://github.com/TomyRioss/Krayson',
+    liveUrl: 'https://krayson.vercel.app/',
   },
   {
     name: 'Sleekstyles E-Commerce',
@@ -81,8 +81,8 @@ const projects: Project[] = [
       'Firestore',
       'Firebase Auth',
     ],
-    repoUrl: 'https://github.com/usuario/proyecto',
-    liveUrl: 'https://proyecto.vercel.app',
+    repoUrl: 'https://github.com/TomyRioss/SleekStyles',
+    liveUrl: 'https://sleekstyles.vercel.app/',
   },
   {
     name: 'Tablero de Mensajes',
@@ -100,8 +100,8 @@ const projects: Project[] = [
       'PostgreSQL',
       'Postman',
     ],
-    repoUrl: 'https://github.com/usuario/proyecto',
-    liveUrl: 'https://proyecto.vercel.app',
+    repoUrl: 'https://github.com/TomyRioss/messageBoard',
+    liveUrl: 'https://message-board-ivory.vercel.app/',
   },
 ];
 
